@@ -7,6 +7,9 @@ jobs:
   reusejob1:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      # - uses: actions/checkout@v2
+      # Checkout the repo 
+      - uses: actions/checkout@v3 
+        with: ${{ github.repository }}
       - run: echo "MY REUSABLE JOB 1 - EXECUTED"
       
