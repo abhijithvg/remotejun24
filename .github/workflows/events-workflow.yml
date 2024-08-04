@@ -15,7 +15,7 @@ jobs:
   main_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Use reusable  workflow
-        uses: ./.github/workflows/reuseme.yml
       - run: echo "TRIGGERED the main branch workflow - event based"
+  reuse_job:
+    uses: ./.github/workflows/reuseme.yml
       
